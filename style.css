@@ -1,0 +1,146 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(277,277,277);
+  }
+  
+  #bot {
+    width: 70%;
+    margin: 0 auto;
+    background-color:rgb(277,277,277);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  
+  #chat-messages {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom:linear-gradient(to bottom, #ffffff 0%,#66a6ff 100%);
+    height: calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
+    overflow: auto;
+  }
+  
+  #chat-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  #chat-input {
+    color: #000000;
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    background-color:#ffffff ;
+  }
+
+  
+  /* send button */
+  button {
+    font-family: inherit;
+    font-size: 15px;
+    background: linear-gradient(to bottom, #2a46ff 0%,#66a6ff 100%);
+    color: white;
+    padding: 0.4em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 27px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.2em;
+    transition: all 0.3s;
+  }
+  
+  button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+  button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0em;
+    transition: all 0.3s;
+  }
+  
+  button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  button:hover svg {
+    transform: rotate(45deg);
+  }
+  
+  /* button css ends   */
+
+  
+  .bot-message {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff; /* different light color */
+    text-align: justify; /* keep it right-aligned */
+    padding: 15px; /* added padding */
+    margin-top: 10px; /* added margin-top to create a gap */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  
+  .user-message {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: "Nunito", sans-serif;
+    background-color: #ececec; /* light color */
+    text-align: left; /* changed text align to left */
+    padding: 15px; /* added padding */
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    border-radius: 5px;
+  }
+  .user-message img,
+  .bot-message img {
+    width: 40px; /* adjust the width of the icon */
+    height: 40px; /* adjust the height of the icon */
+    margin-right: 20px; /* add some margin to separate the icon from the message */
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
+    #bot {
+      width: 90%;
+    }
+  }
+  .main-title {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    font-style: italic;
+  }
